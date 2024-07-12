@@ -23,7 +23,7 @@ func ConnectDatabase() *gorm.DB {
             Colorful:      true,          // Disable color
         },
     )
-   dsn := os.Getenv("DATA_BASE")
+   dsn := os.Getenv("DATA_BASE_UPLOAD")
     db, err := gorm.Open(mysql.Open(dsn), &gorm.Config{
       Logger: newLogger,
     })

@@ -12,5 +12,5 @@
 vendor/
 
 # Environment variable files
-.env
-.todo
+
+./todo
