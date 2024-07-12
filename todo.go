@@ -37,6 +37,6 @@ err := godotenv.Load()
     todoRouter.DELETE("/DeleteTodo/:id", controller.DeleteTodo)
     todoRouter.PATCH("/UpdateTodo/:id", controller.UpdateTodo)
     }
-    router.Run(":1000")
+    router.Run(":8080")
 }
 
