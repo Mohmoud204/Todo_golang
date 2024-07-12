@@ -31,12 +31,12 @@ err := godotenv.Load()
     }))
     todoRouter := router.Group("/v1/todo")
     {
-    todoRouter.POST("/todos", controller.CreateTodo)
+    todoRouter.POST("/AddTodo", controller.CreateTodo)
     todoRouter.GET("/GetAllTodos", controller.GetAllTodos)
     todoRouter.GET("/ShowTodoById/:id", controller.ShowTodoById)
     todoRouter.DELETE("/DeleteTodo/:id", controller.DeleteTodo)
     todoRouter.PATCH("/UpdateTodo/:id", controller.UpdateTodo)
     }
-    router.Run(":9000")
+    router.Run(":1000")
 }
 
